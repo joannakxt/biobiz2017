@@ -1,0 +1,184 @@
+.navbar .container-fluid {
+	color: #F6CED8; /* doesnt change colour? */
+	/* Adds shadow to the bottom of the bar */
+	-webkit-box-shadow: 0px 0px 8px 0px #000000;
+	-moz-box-shadow: 0px 0px 8px 0px #000000;
+	box-shadow: 0px 0px 8px 0px #000000;
+	/* Adds the transparent background */
+	background-color: rgba(0, 0, 0, 0.8);
+	color: rgba(0, 0, 0, 0.8);
+
+}
+
+.nav li {
+	float: left;
+}
+
+.nav li a {
+	transition: 0.3s;
+	display: inline;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: "Berlin Sans FB";
+
+}
+
+.nav li.icon {
+	display:none;
+}
+
+.navbar .nav li a:link {
+	color: white;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+.navbar .nav li a:hover {
+	color: #F05F40; //CHANGE HERE
+}
+
+
+/* nav bar */
+@media screen and (max-width:680px) {
+  ul.nav li:not(:first-child) {
+  	display: none;
+  }
+  ul.nav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.nav.responsive {
+  	position: relative;
+  }
+  ul.nav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.nav.responsive li {
+    float: none;
+    display: inline;
+    text-align: left;
+  }
+  ul.nav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+
+body h1 {
+	font-size: 70px;
+	text-align: center;
+	font-family: "Berlin Sans FB";
+	padding: 20px;
+	text-shadow: 0px 0px 1px #000000;
+}
+
+body p {
+	font-size: 18px;
+	padding: 15px;
+	font-family: "Segoe UI";
+	padding-left: 100px;
+	padding-right: 100px;
+	
+}
+
+body h2 {
+	font-size: 28px;
+	padding: 15px;
+	font-family: "Berlin Sans FB";
+}
+
+body h3 {
+	font-size: 20px;
+	padding: 10px;
+	font-family: "Berlin Sans FB";
+	
+}
+
+#Home{
+	padding: 30px;
+	height: 700px;
+}
+
+#Home img {
+	position: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	margin-top: 80px;
+}
+
+#AboutUs{
+	padding-top: 30px;
+	background-color: #F05F40;
+	text-align: center;
+}
+
+#AboutUs img {
+	display: block;
+	border-radius: 50%;
+	max-width: 50%;
+	max-height: 50%;
+	position: center;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
+	
+}
+
+#EventDetails {
+	padding-top: 30px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+#EventDetails #map img {
+	max-width: 80%;
+	max-height: 80%;
+}
+
+#EventDetails .row img {
+	display: block;
+	border-radius: 50%;
+	max-width: 50%;
+	max-height: 50%;
+	position: center;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
+}
+
+
+table {
+	
+}
+
+table td {
+	text-align: center;
+}
+
+
+
+
+#Registration{
+	padding-top: 30px;
+	background-color: #F05F40;
+
+}
+
+#Sponsors{
+	padding-top: 30px;
+	
+}
+
+
+
