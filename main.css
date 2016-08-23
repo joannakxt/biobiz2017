@@ -1,11 +1,10 @@
 .navbar .container-fluid {
-	color: #F6CED8; /* doesnt change colour? */
 	/* Adds shadow to the bottom of the bar */
 	-webkit-box-shadow: 0px 0px 8px 0px #000000;
 	-moz-box-shadow: 0px 0px 8px 0px #000000;
 	box-shadow: 0px 0px 8px 0px #000000;
 	/* Adds the transparent background */
-	background-color: rgba(89, 168, 222,1);
+	background-color: #000000;
 	color: rgba(0, 0, 0, 0.8);
 
 }
@@ -15,11 +14,11 @@
 }
 
 .top-logo { 
-    width: 102px;
+    width: 80px;
 }
 
 .nav li:not(.no-pad) {
-	padding-top: 30px;
+	padding-top: 20px;
 }
 
 .nav li a {
@@ -33,12 +32,12 @@
 }
 
 .nav li.icon {
-	display:none;
+	display: none;
 }
 
 .navbar .nav li a:link {
 	color: white;
-	font-size: 30px;
+	font-size: 25px;
 	padding-left: 20px;
 	padding-right: 20px;
 	text-decoration: none;
@@ -86,7 +85,7 @@ body h1 {
 	font-size: 70px;
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
-	padding: 80px;
+	padding: 20px;
 	text-shadow: 0px 0px 1px #000000;
 }
 
@@ -101,7 +100,6 @@ body p {
 
 body h2 {
 	font-size: 28px;
-	padding: 15px;
 	font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -114,20 +112,20 @@ body h3 {
 
 #Home{
 	padding: 30px;
-	height: 700px;
+	height: 600px;
 }
 
 #Home img {
 	position: center;
-	margin-left: auto;
-	margin-right: auto;
+	border: 30px;
 	width: 100%;
-	margin-top: 80px;
+	margin-top: 100px;
 }
 
 #AboutUs{
-	padding-top: 30px;
-	background-color: #93d8ae;
+	padding-top: 15px;
+	padding-bottom: 30px;
+	background-color: #86D5D0;
 	text-align: center;
 }
 
@@ -144,8 +142,8 @@ body h3 {
 }
 
 #EventDetails {
-	padding-top: 30px;
-	padding-bottom: 60px;
+	padding-top: 15px;
+	padding-bottom: 30px;
 	text-align: center;
 }
 
@@ -165,28 +163,29 @@ body h3 {
 	box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
 }
 
-
-table {
-	
-}
-
 table td {
 	text-align: center;
 }
 
-
-
-
 #Registration{
-	padding-top: 30px;
-	background-color: #93d8ae;
-
+	padding-top: 15px;
+	padding-bottom: 30px;
+	background-color: #86D5D0;
+/**#93d8ae**/
 }
 
 #Sponsors{
-	padding-top: 30px;
+	padding-top: 15px;
+	padding-bottom: 30px;
 	
 }
 
+.card {
+	padding: 8px;
+}
 
+.btn-outline-* {
+	border: 3px solid #000000;
+
+}
 
