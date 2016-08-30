@@ -1,85 +1,47 @@
-.navbar .container-fluid {
+.navbar-default .container-fluid {
 	/* Adds shadow to the bottom of the bar */
 	-webkit-box-shadow: 0px 0px 8px 0px #000000;
 	-moz-box-shadow: 0px 0px 8px 0px #000000;
 	box-shadow: 0px 0px 8px 0px #000000;
 	/* Adds the transparent background */
-	background-color: #000000;
-	color: rgba(0, 0, 0, 0.8);
-
+	padding: 3px;
+	background-color: black;
 }
 
-.nav li {
-	float: left;
+.navbar-default .navbar-header .navbar-brand {
+	padding-top: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 0px;
 }
 
+.navbar-default .navbar-nav {
+	float:left;
+}
+
+.navbar-default .navbar-nav li  {
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.navbar-default .navbar-nav li a {
+	color: #ffffff;
+}
+
+/* Can't make the active link highlighted.... */
+.navbar-default .navbar-nav li a:active,
+.navbar-default .navbar-nav li a:focus,
+.navbar-default .navbar-nav li a:hover {
+	color: #F05F40;
+}
+
+ /* Suggest not to have this logo at all. Just the word BIOBIZ */
 .top-logo { 
     width: 80px;
+	height: 60px;
 }
-
-.nav li:not(.no-pad) {
-	padding-top: 20px;
-}
-
-.nav li a {
-	transition: 0.3s;
-	display: inline;
-	color: white;
-	padding-left: 20px;
-	padding-right: 20px;
-	font-family: 'Josefin Sans', sans-serif;
-
-}
-
-.nav li.icon {
-	display: none;
-}
-
-.navbar .nav li a:link {
-	color: white;
-	font-size: 25px;
-	padding-left: 20px;
-	padding-right: 20px;
-	text-decoration: none;
-	background-color: transparent;
-}
-
-.navbar .nav li a:hover {
-	color: #F05F40; //CHANGE HERE
-}
-
-
-/* nav bar */
-@media screen and (max-width:680px) {
-  ul.nav li:not(:first-child) {
-  	display: none;
-  }
-  ul.nav li.icon {
-    float: right;
-    display: inline-block;
-  }
-}
-
-@media screen and (max-width:680px) {
-  ul.nav.responsive {
-  	position: relative;
-  }
-  ul.nav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.nav.responsive li {
-    float: none;
-    display: inline;
-    text-align: left;
-  }
-  ul.nav.responsive li a {
-    display: block;
-    text-align: left;
-  }
-}
-
 
 body h1 {
 	font-size: 70px;
@@ -138,7 +100,6 @@ body h3 {
 	margin-left: auto;
 	margin-right: auto;
 	box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
-	
 }
 
 #EventDetails {
@@ -171,7 +132,6 @@ table td {
 	padding-top: 15px;
 	padding-bottom: 30px;
 	background-color: #86D5D0;
-/**#93d8ae**/
 }
 
 #Sponsors{
@@ -180,12 +140,70 @@ table td {
 	
 }
 
-.card {
-	padding: 8px;
+/** Fade in animation for the row **/
+@-webkit-keyframes fadeIn {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+@-moz-keyframes fadeIn {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
 }
 
-.btn-outline-* {
-	border: 3px solid #000000;
-
+@keyframes fadeIn {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
 }
+
+.fade-in {
+	opacity:0;
+	/* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-webkit-animation:fadeIn ease-in 1;
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	/* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:0.3s;
+	-moz-animation-duration:0.3s;
+	animation-duration:0.3s;
+}
+
+.fade-in.one {
+	-webkit-animation-delay:0.1s;
+	-moz-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+
+.fade-in.two {
+	-webkit-animation-delay: 0.2s;
+	-moz-animation-delay:0.2s;
+	animation-delay: 0.2s;
+}
+
+.fade-in.three {
+	-webkit-animation-delay: 0.3s;
+	-moz-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+
+
+
+
+
 
