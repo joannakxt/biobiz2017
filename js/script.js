@@ -20,5 +20,11 @@ $(document).ready(function(){
         window.location.hash = hash;
       });
     } // End if
+
+	// highlight the active tab on navbar
+	$(".nav").find(".active").removeClass("active");
+    $(this).parent().addClass("active");
+
   });
 });
+

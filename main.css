@@ -34,7 +34,12 @@
 .navbar-default .navbar-nav li a:active,
 .navbar-default .navbar-nav li a:focus,
 .navbar-default .navbar-nav li a:hover {
-	color: #F05F40;
+	color: #648CEB;
+	background-color: none;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color: #648CEB;
+	background-color: #000;
 }
 
  /* Suggest not to have this logo at all. Just the word BIOBIZ */
@@ -44,44 +49,61 @@
 }
 
 body h1 {
-	font-size: 70px;
+	font-size: 50px;
 	text-align: center;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
 	padding: 20px;
+	padding-bottom:5px;
+	margin-bottom:5px;
 	text-shadow: 0px 0px 1px #000000;
+	
 }
 
 body p {
 	font-size: 18px;
 	padding: 15px;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
 	margin-left: 100px;
 	margin-right: 100px;
 	text-align: justify;
+	font-weight: normal;
 	
 }
 
 body h2 {
-	font-size: 28px;
-	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
+	font-family: 'Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 body h3 {
-	font-size: 20px;
-	font-family: 'Josefin Sans', sans-serif;
+	font-size: 22px;
+	font-family: 'Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
 	
+}
+
+a {
+	font-family: 'Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+hr {
+	border-color:#000;
+	border-width: 8px;
+	max-width: 120px;
+	margin-bottom: 30px;
+	margin-top: 0px;
+	border-top: solid 3px #648CEB;
 }
 
 #Home{
 	padding: 30px;
-	height: 600px;
+	padding-top: 90px;
+	
 }
 
 #Home img {
 	position: center;
 	border: 30px;
 	width: 100%;
-	margin-top: 100px;
 }
 
 #AboutUs{
@@ -100,6 +122,8 @@ body h3 {
 	position: center;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
 }
 
@@ -148,6 +172,8 @@ body h3 {
 	position: center;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
 }
 
@@ -182,12 +208,98 @@ table td {
 	padding-top: 15px;
 	padding-bottom: 30px;
 	background-color: #d7f6ff;
+	text-align: center;
+
 }
 
 #Sponsors{
 	padding-top: 15px;
 	padding-bottom: 30px;
 	
+}
+
+#FAQ{
+	padding-top: 15px;
+	padding-bottom: 30px;
+	background-color: #d7f6ff;
+	text-align: center;
+
+}
+
+#Socialfooter {
+	background-color: #fff;
+	padding: 50px;
+}
+
+#Socialfooter ul {
+	overflow: auto;
+	position: relative;
+	padding: 20px;
+}
+
+#Socialfooter ul li {
+	display: inline-block;
+	list-style-type: none;
+
+}
+
+#Socialfooter ul li a i {
+	background: #d7f6ff;
+	color: #fff;
+	width: 80px;
+	height: 80px;
+	border-radius: 20px;
+	font-size: 60px;
+	text-align: center;
+	margin-right: 10px;
+	padding-top: 10px;
+	
+	transition: all 0.2s ease-in-out;
+}
+
+#Socialfooter ul li a i:hover {
+	opacity: 0.7;
+}
+
+#Socialfooter .container {
+	margin-left:100px;
+	margin-right:100px;
+	text-align: center;
+	
+}
+
+#Socialfooter .fa-facebook-square {
+	color:#3b5998;
+}
+
+#Socialfooter .fa-youtube {
+	color: #bb0000;
+}
+#Socialfooter .fa-envelope-square {
+	color: #dd4b39;
+}
+
+
+ul li a i {
+	transition: all 0.2s ease-in-out;
+}
+ul li a i:hover {
+	opacity: 0.7;
+}
+
+.btn-primary {
+    color: #000000;
+    background: #648CEB;
+	border: 2px solid #000000;
+	font-weight: bold;
+}
+
+.btn-primary:hover {
+    color: #000000;
+    background: #E0848F;
+	border: 2px solid #E28C95;
+	
+	transition: all 0.2s ease-in-out;
 }
 
 /** Fade in animation for the row **/
@@ -232,6 +344,7 @@ table td {
 	-webkit-animation-duration:0.3s;
 	-moz-animation-duration:0.3s;
 	animation-duration:0.3s;
+
 }
 
 .fade-in.one {
@@ -250,10 +363,6 @@ table td {
 	-webkit-animation-delay: 0.3s;
 	-moz-animation-delay: 0.3s;
 	animation-delay: 0.3s;
+
 }
-
-
-
-
-
 
