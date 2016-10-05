@@ -16,7 +16,7 @@
 }
 
 .navbar-default .navbar-nav {
-	float:left;
+	float: left;
 }
 
 .navbar-default .navbar-nav li  {
@@ -24,29 +24,24 @@
 	padding-right: 5px;
 	font-size: 20px;
 	font-weight: bold;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 .navbar-default .navbar-nav li a {
 	color: #ffffff;
 }
 
-/* Can't make the active link highlighted.... */
 .navbar-default .navbar-nav li a:active,
 .navbar-default .navbar-nav li a:focus,
 .navbar-default .navbar-nav li a:hover {
-	color: #648CEB;
-	background-color: none;
-}
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-	color: #648CEB;
-	background-color: #000;
+	color: #02B0A3;
+	background-color: transparent;
 }
 
- /* Suggest not to have this logo at all. Just the word BIOBIZ */
-.top-logo { 
-    width: 80px;
-	height: 60px;
+.navbar-default .navbar-nav li a.active {
+	color: #02B0A3;
+	background-color: transparent;
 }
+
 
 body h1 {
 	font-size: 50px;
@@ -55,7 +50,6 @@ body h1 {
 	padding: 20px;
 	padding-bottom:5px;
 	margin-bottom:5px;
-	text-shadow: 0px 0px 1px #000000;
 	
 }
 
@@ -78,7 +72,6 @@ body h2 {
 body h3 {
 	font-size: 22px;
 	font-family: 'Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
-	
 }
 
 a {
@@ -91,13 +84,12 @@ hr {
 	max-width: 120px;
 	margin-bottom: 30px;
 	margin-top: 0px;
-	border-top: solid 3px #648CEB;
+	border-top: solid 3px #fff;
 }
 
 #Home{
 	padding: 30px;
 	padding-top: 90px;
-	
 }
 
 #Home img {
@@ -105,11 +97,11 @@ hr {
 	border: 30px;
 	width: 100%;
 }
-
+	/** #02B0A3 #F05F40 **/
 #AboutUs{
 	padding-top: 15px;
 	padding-bottom: 30px;
-	background-color: #def5fb;
+	background-color: #02B0A3;
 	text-align: center;
 	width: 100%;
 }
@@ -134,23 +126,40 @@ hr {
 }
 
 #AboutUs .container #box{
-	background-color: #ffffff;
 	padding: 0px;
 	margin: 2px;
-	width: 100%;
-	
+	width: auto;
 }
 
-#AboutUs .container #boxComm {
+#AboutUs .container #carouselBox {
+	padding: 2px;
 	background-color: #ffffff;
-	padding: 0px;
-	margin: 2px;
-	width: 100%;
+	margin-left: 90px;
+	margin-right: 90px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: auto;
 }
 
-#AboutUs .container #boxComm img {
-	width: 100%;
-	height: 80%;
+#AboutUs .carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	margin: 0px;
+}
+
+#AboutUs .btn-primary {
+    color: #ffffff;
+    background: #02B0A3;
+	border: 2px solid #ffffff;
+	font-weight: bold;
+	height:60px;
+	width: 150px;
+}
+
+#AboutUs .btn-primary:hover {
+	color: #02B0A3;
+	background: #ffffff;
+	border: 2px solid #ffffff;
+	transition: all 0.2s ease-in-out;
 }
 
 #EventDetails {
@@ -159,9 +168,8 @@ hr {
 	text-align: center;
 }
 
-#EventDetails #map img {
-	max-width: 80%;
-	max-height: 80%;
+#EventDetails hr {
+	border-top: solid 3px #02B0A3;
 }
 
 #EventDetails .row img {
@@ -179,7 +187,8 @@ hr {
 
 table td {
 	text-align: center;
-	
+	font-family: 'Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-size: 16px;
 }
 
 .panellist {
@@ -188,15 +197,15 @@ table td {
 	text-align: left;
 	list-style: none;
 	font-size: 18px;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 .panellist .insidepanellist {
 	list-style: none;
 }
 
+
 #EventDetails .container #box{
-	background-color: #d7f6ff;
 	padding: 0px;
 	margin: 2px;
 	position: relative;
@@ -207,28 +216,31 @@ table td {
 #Registration{
 	padding-top: 15px;
 	padding-bottom: 30px;
-	background-color: #d7f6ff;
+	background-color: #02B0A3;
 	text-align: center;
-
 }
 
 #Sponsors{
 	padding-top: 15px;
 	padding-bottom: 30px;
-	
+}
+
+#Sponsors hr {
+	border-top: solid 3px #02B0A3;
 }
 
 #FAQ{
 	padding-top: 15px;
 	padding-bottom: 30px;
-	background-color: #d7f6ff;
+	background-color: #02B0A3;
 	text-align: center;
-
+	width: 100%;
 }
 
 #Socialfooter {
 	background-color: #fff;
 	padding: 50px;
+	width: 100%;
 }
 
 #Socialfooter ul {
@@ -244,7 +256,7 @@ table td {
 }
 
 #Socialfooter ul li a i {
-	background: #d7f6ff;
+	background: #02B0A3;
 	color: #fff;
 	width: 80px;
 	height: 80px;
@@ -289,80 +301,20 @@ ul li a i:hover {
 
 .btn-primary {
     color: #000000;
-    background: #648CEB;
-	border: 2px solid #000000;
+    background: #ffffff;
+	border: 2px solid #02B0A3;
 	font-weight: bold;
 }
 
 .btn-primary:hover {
-    color: #000000;
-    background: #E0848F;
-	border: 2px solid #E28C95;
-	
+    color: #ffffff;
+    background: #02B0A3;
+	border: 2px solid #02B0A3;
 	transition: all 0.2s ease-in-out;
 }
 
-/** Fade in animation for the row **/
-@-webkit-keyframes fadeIn {
-	from {
-		opacity:0;
-	}
-	to {
-		opacity:1;
-	}
-}
-@-moz-keyframes fadeIn {
-	from {
-		opacity:0;
-	}
-	to {
-		opacity:1;
-	}
-}
+.active { background-color: #fff; }
+/* to override the existing css for "a" tag */
+#bs-example-navbar-collapse-1 .active a{ color: #fff; }
 
-@keyframes fadeIn {
-	from {
-		opacity:0;
-	}
-	to {
-		opacity:1;
-	}
-}
-
-.fade-in {
-	opacity:0;
-	/* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-	-webkit-animation:fadeIn ease-in 1;
-	-moz-animation:fadeIn ease-in 1;
-	animation:fadeIn ease-in 1;
-
-	/* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-	-webkit-animation-fill-mode:forwards;
-	-moz-animation-fill-mode:forwards;
-	animation-fill-mode:forwards;
-
-	-webkit-animation-duration:0.3s;
-	-moz-animation-duration:0.3s;
-	animation-duration:0.3s;
-
-}
-
-.fade-in.one {
-	-webkit-animation-delay:0.1s;
-	-moz-animation-delay: 0.1s;
-	animation-delay: 0.1s;
-}
-
-.fade-in.two {
-	-webkit-animation-delay: 0.2s;
-	-moz-animation-delay:0.2s;
-	animation-delay: 0.2s;
-}
-
-.fade-in.three {
-	-webkit-animation-delay: 0.3s;
-	-moz-animation-delay: 0.3s;
-	animation-delay: 0.3s;
-
-}
 
