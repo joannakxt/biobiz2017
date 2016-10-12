@@ -2,11 +2,11 @@ $(document).ready(function () {
     $(document).on("scroll", onScroll);
 
     //smoothscroll
-    $('a[href^="#"]').on('click', function (e) {
+    $('.nav a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         $(document).off("scroll");
 
-        $('.nav a').each(function () {
+        $('a').each(function () {
             $(this).removeClass('active');
         })
         $(this).addClass('active');
@@ -24,11 +24,11 @@ $(document).ready(function () {
 });
 
 function onScroll(event){
-    var scrollPos = $(document).scrollTop();
+    var scrollPos = $(document).scrollTop() + 100;
     $('#bs-example-navbar-collapse-1 a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        if (refElement.position().top <= scrollPos && refElement.position().top  + refElement.height() > scrollPos) {
             $('#bs-example-navbar-collapse-1 ul li a').removeClass("active");
             currLink.addClass("active");
         }
