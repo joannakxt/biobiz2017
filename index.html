@@ -27,9 +27,9 @@
 
 	<!-- Latest CSS Javascript -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>-->
 
 	<!-- Image Slider -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -75,8 +75,42 @@
 </nav>
 
 <div id="Home">
-	<div class="container">
-		<img src="img/coverphoto.jpg" alt="CoverImage">
+	<div class="container" id="box">
+
+		<div class="container" id = "carouselBox">
+
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+
+
+					<div class="item active">
+						<img src="img/aboutus/a2.jpg" alt="Image">
+					</div>
+
+					<div class="item">
+						<img src="img/aboutus/a3.jpg" alt="Image">
+					</div>
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+
+		</div>
 
 	</div>
 </div>
@@ -85,52 +119,14 @@
 	<div class="container">
 		<h1> ABOUT US</h1>
 		<hr>
-		<h2> Vision </h2>
-		<p style="text-align:center;"> " To give aspiring talents a better perspective on Singapore's biomedical and pharmaceutical industry and at the same time empower the growth of these industries with promising talents.  " <br>
-		</p>
-		<h2>Mission </h2>
-		<p style="text-align:center;"> " To inspire	and	connect	aspiring talents with experts in the biomedical field. " </p>
+		<h2>VISION </h2>
+		<h4><i> "To give aspiring talents a better perspective on Singapore's biomedical and pharmaceutical industry and at the same time empower the growth of these industries with promising talents." <br>
+		</i></h4>
+		<h2>MISSION </h2>
+		<h4><i>"To inspire	and	connect	aspiring talents with experts in the biomedical field."
+		</i></h4>
 
-		<div class="container" id = "box">
-			<div class="container" id = "aboutUscarouselBox">
-
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-					</ol>
-
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner" role="listbox">
-						<div class="item active">
-							<img src="img/aboutus/a1.jpg" alt="Image">
-						</div>
-
-						<div class="item">
-							<img src="img/aboutus/a2.jpg" alt="Image">
-						</div>
-
-						<div class="item">
-							<img src="img/aboutus/a3.jpg" alt="Image">
-						</div>
-					</div>
-
-					<!-- Left and right controls -->
-					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</a>
-				</div>
-
-			</div>
-		</div>
-
+		<br>
 		<p>
 			BioBiz is a biomedical conference that is organized for students by students. It aims to provide an interactive platform to help aspiring graduates and undergraduates gain insights and expose them to the myriad of opportunities available in the biomedical industry.
 			<br><br>
@@ -152,7 +148,7 @@
 
 					<div class="col-md-4 col-xs-4">
 						<a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion" href="#chairmsg" role="button">
-							CHAIRPERSON'S <br> MESSAGE
+							CHAIRPERSON <br> MESSAGE
 						</a>
 					</div>
 
@@ -169,15 +165,26 @@
 					<div class="container" id = "box">
 						<h2> OUR MILESTONES</h2>
 
-						<img src="img/milestone.png" id="milestone" >
+						<p style="text-align: center;">
+							<b><U>2006</U></b><br>
+							BioBiz Inauguration <br><br>
+							<b><U>2010</U></b><br>
+							Started Parallel Sharing Sessions<br><br>
+							<b><U>2011</U></b><br>
+							Launched Pre-Conference Site Visits<br><br>
+							<b><U>2012</U></b><br>
+							Introduced Bio-entrepreneurship by showcasing startups<br><br>
+							<b><U>2016</U></b><br>
+							Commendable number of 600 participants<br><br>
+						</p>
 						<br>
 
 						<h3>Archives</h3>
 						<div class="col-md-4 col-xs-4"></div>
-							<div class="col-md-4 col-xs-4">
-						<a class="btn btn-primary" role="button">  2016's WEBSITE </a>
-							</div>
-							<div class="col-md-4 col-xs-4"></div>
+						<div class="col-md-4 col-xs-4">
+							<a class="btn btn-primary" role="button">  2016's WEBSITE </a>
+						</div>
+						<div class="col-md-4 col-xs-4"></div>
 					</div>
 				</div>
 
@@ -186,6 +193,7 @@
 						<br>
 						<h2> CHAIRPERSON'S MESSAGE </h2>
 						<p>
+							<img src="img/chairman.png" id="chairimg" alt="Image">
 							With a successful decade long track record of connecting the leaders of future with the leaders of today in biomedical industry, I am delighted to present to you - BioBiz 2017. Every year in Singapore, BioBiz provides a platform for both the biomedical industry and the young talents from universities to find the right employee and the right employer, respectively. By bringing the key players in the biomedical industry and budding talents together, BioBiz has become the bridge that makes "supply meet demand" in Singapore's biomedical industry.
 							<br><br>
 							With growing participation from previous years, BioBiz 2017 is going to be even more exciting and fruitful for both the talents and talent hunters in biomedical arena. Building on previous years' success, we aim to expand our platform from a specialized niche in biomedical sciences to a wider one, incorporating biotechnology and medical technology industries. Along with the enthusiasm we have witnessed from undergraduates over the years, we foresee a higher participation by university postgraduates, polytechnic and ITE graduates, as we align ourselves with Skills Future Mission of Singapore, by holding parallel sessions for polytechnic and ITE audience and by expanding ourselves into R&D, healthcare and medical technology areas. This will provide specialists as well as technicians to the industries as well as a chance to propel the mission of building a skilled workforce in Singapore.
@@ -194,14 +202,13 @@
 							<br><br>
 							I believe, by bringing Singapore's best talents and top industrial players together, BioBiz 2017 presents the best platform for all involved - for companies to showcase their opportunities and for talents to unveil their potential, accelerating Singapore's vision for a strong workforce to push the horizon of biomedical industries in Singapore.
 							<br><br>
-
-							<img src="img/chairman.png" alt="Image" style="float:right; padding-bottom:10px;">
-
+						</p>
+						<p>
 							Warmest	regards, <br>
 							Rajesh	Kumar	Sharma<br>
-							Chairperson	|	BioBiz	2017:	Explore	.	Engage	.	Embark<br>
-							Mobile:	(65)	84419695	|	E-mail:	rajesh.sharma@biobiz.sg<br>
-
+							Chairperson	<br>
+							Mobile:	(65)	84419695<br>
+							E-mail:	rajesh.sharma@biobiz.sg <br>
 						</p>
 					</div>
 				</div>
@@ -209,37 +216,35 @@
 				<div class="collapse" id="gallery">
 					<div class="container" id = "box">
 						<h2>ORGANISING COMMITTEE</h2>
-						<div class="container" id = "carouselBox">
+						<div class="container" id = "carouselBoxCommittee">
 
-							<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<div id="committeeCarousel" class="carousel slide" data-ride="carousel">
 								<!-- Indicators -->
 								<ol class="carousel-indicators">
-									<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-									<li data-target="#myCarousel" data-slide-to="1"></li>
-									<li data-target="#myCarousel" data-slide-to="2"></li>
-									<li data-target="#myCarousel" data-slide-to="3"></li>
-									<li data-target="#myCarousel" data-slide-to="4"></li>
-									<li data-target="#myCarousel" data-slide-to="5"></li>
-									<li data-target="#myCarousel" data-slide-to="6"></li>
+									<li data-target="#committeeCarousel" data-slide-to="0" class="active"></li>
+									<li data-target="#committeeCarousel" data-slide-to="1"></li>
+									<li data-target="#committeeCarousel" data-slide-to="2"></li>
+									<li data-target="#committeeCarousel" data-slide-to="3"></li>
+									<li data-target="#committeeCarousel" data-slide-to="4"></li>
+									<li data-target="#committeeCarousel" data-slide-to="5"></li>
+									<li data-target="#committeeCarousel" data-slide-to="6"></li>
 
 								</ol>
 
 								<!-- Wrapper for slides -->
 								<div class="carousel-inner" role="listbox">
-
 									<div class="item active">
 										<img src="img/committee/BioBizCommittee_resized.jpg" alt="Image">
 										<div class="carousel-caption">
 											<h3>BioBizCommittee</h3>
-											<p>Names?</p>
+
 										</div>
 									</div>
-
 									<div class="item">
 										<img src="img/committee/Executive_resized.jpg" alt="Image">
 										<div class="carousel-caption">
 											<h3>Executive</h3>
-											<p>Names?</p>
+
 										</div>
 									</div>
 
@@ -247,7 +252,7 @@
 										<img src="img/committee/Finance_resized.jpg" alt="Image">
 										<div class="carousel-caption">
 											<h3>Finance</h3>
-											<p>Names?</p>
+
 										</div>
 									</div>
 
@@ -255,7 +260,7 @@
 										<img src="img/committee/Logistics_resized.jpg" alt="Image">
 										<div class="carousel-caption">
 											<h3>Logistics</h3>
-											<p>Names?</p>
+
 										</div>
 									</div>
 
@@ -263,7 +268,7 @@
 										<img src="img/committee/Marketing_resized.jpg" alt="Image">
 										<div class="carousel-caption">
 											<h3>Marketing</h3>
-											<p>Names?</p>
+
 										</div>
 									</div>
 
@@ -271,7 +276,7 @@
 										<img src="img/committee/Programmes_resized.jpg" alt="Image">
 										<div class="carousel-caption">
 											<h3>Programmes</h3>
-											<p>Names?</p>
+
 										</div>
 									</div>
 
@@ -279,25 +284,128 @@
 										<img src="img/committee/Publicity_resized.jpg" alt="Image">
 										<div class="carousel-caption">
 											<h3>Publicity</h3>
-											<p>Names?</p>
+
 										</div>
 									</div>
 
 								</div>
 
 								<!-- Left and right controls -->
-								<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+								<a class="left carousel-control" href="#committeeCarousel" role="button" data-slide="prev">
 									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 									<span class="sr-only">Previous</span>
 								</a>
-								<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+								<a class="right carousel-control" href="#committeeCarousel" role="button" data-slide="next">
 									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 									<span class="sr-only">Next</span>
 								</a>
 							</div>
 
 						</div>
+
+						<br>
+						<div class="row">
+							<div class="col-md-4 col-xs-4">
+								<p style="font-size: 80%;">
+									<i>"BioBiz provides a platform for our participants to explore the biomedical industry, engage with the industry leaders and embark on a new career. Working with a team of talented and like-minded committees, I believe we will create a fabulous networking conference to connect aspiring students and professionals. This will be an exciting adventure we are on!" <br></i>
+									Lim Bao Hui, Vice Chairperson, School of Chemical and Biomedical Engineering (Bioengineering, Year 4) <br><br>
+								</p>
+							</div>
+
+							<div class="col-md-4 col-xs-4">
+								<p style="font-size: 80%;">
+									<i>"BioBiz,  a journey to ‘Explore . Engage . Embark’, where teamwork is cultivated and friendships are forged. Looking forward to make this ‘for students by students’ experience a fun-filled and meaningful one. Viva La BioBiz!"</i><br>
+									Megan Tan, Vice Chairperson, Faculty of Science (Pharmacy, Year 4)<br><br>
+								</p>
+							</div>
+
+							<div class="col-md-4 col-xs-4">
+								<p style="font-size: 80%;">
+									<i>"BioBiz has always provided our participants with a chance to peek behind the curtains and Explore their future in the Biomedical Industry. This year we will be going beyond that to also give you an excellent platform to Engage with professionals and Embark on a career in the Biomedical sectors. With the help of the capable and committed organizing team, I assure you that Biobiz 2017 will be a conference that is not to be missed!"
+									</i><br>
+									Vidhya Bharathi Dharmalingam, Vice Chairperson, Faculty of Engineering <br>(Biomedical Engineering, Year 4)<br><br>
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4 col-xs-4">
+								<p style="font-size: 80%;">
+									<i>"BioBiz provides me with an exciting opportunity to work with people from all facets of life! It is a conduit through which people with similar career aspirations converge and embark on their journey in the Pharmaceuticals sector." <br></i>
+									Ariel Chua, Secretary, Faculty of Engineering (Chemical Engineering, Year 4) <br><br>
+								</p>
+							</div>
+							<div class="col-md-4 col-xs-4">
+								<p style="font-size: 80%;">
+									<i>"As I'm graduating next year, I wish to learn more about the biomedical industry in Singapore and be better prepared for my career. Also, I look forward to working with a team of talented people to make this event a success!" <br></i>
+									He Shuai, Finance Director, Faculty of Engineering (Biomedical Engineering, PhD Year 4) <br><br>
+								</p>
+							</div>
+							<div class="col-md-4 col-xs-4">
+								<p style="font-size: 80%;">
+									<i>"BioBiz is a platform, a bridge and an opportunity for students to get to know about the biomedical industry in Singapore as well as to explore their options in this field. It’s a place to broaden your horizons as well as to meet people who are experts in the field who are equally passionate about it.
+										" <br></i>
+									Charmaine Sng Shi Min, Finance Vice Director, Faculty of Science (Pharmacy, Year 3) <br><br>
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4 col-xs-4">
+								<p style="font-size: 80%;">
+									<i>"Biobiz 2017 is an amazing platform for students to not only gain more insights of the Biomedical and Pharmaceutical industries, but also to find wonderful opportunities in which they can contribute in these industries. With the three main aim of Biobiz 2017, which is to Explore , Engage and Embark, it’s a great avenue to meet like-minded individual and industry professional to gain a wider learning experience." <br></i>
+									Salihah Begum, Logistics Director, Faculty of Science (Life Science, Year 3) <br><br>
+								</p>
+							</div>
+							<div class="col-md-4 col-xs-4">
+								<p style="font-size: 80%;">
+									<i>"It is only via the integration of science, technology, business and arts can the world and humanity progress towards the new frontier. Knowledge and expertise gained from all these field can both be translated parallely to develop each other. With the background of science and technology, we can engineer the future of the world, connecting experts from different fields while creating opportunity for all to explore various possibilities..." <br></i>
+									Louis Ong, Logistics Vice Director, Faculty of Engineering (Biomedical Engineering, PhD Year 3)<br><br>
+								</p>
+							</div>
+							<div class="col-md-4 col-xs-4">
+								<p style="font-size: 80%;">
+									<i>"BioBiz 2017! A conference and a platform to engage, interact and have fun with other like-minded peers and professionals in the biomedical and pharmaceutical industry. A challenging and fun experience and it’s great to be part of this awesome team!" <br></i>
+									Png Si Ning, Marketing Director, Faculty of Engineering (Biomedical Engineering, Masters Year 2) <br><br>
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4 col-xs-4">
+								<p style="font-size: 80%;">
+									<i>"Biobiz is not just a mere conference. It is a place where promising talents and experts meet to bring about new innovations to the biomedical industry. Along with my enthusiastic committee, I am sure that Biobiz 2017 will be an amazing one." <br></i>
+									Mandy Yee, Marketing Vice Director,  Faculty of Engineering (Biomedical Engineering, Year 3)<br><br>
+								</p>
+							</div>
+							<div class="col-md-4 col-xs-4">
+								<p style="font-size: 80%;">
+									<i>"Biobiz is an great opportunity to not just learn, to also to prepare yourself for a career in the Biomedical sector! Personally, I look forward to working with a team of extremely talented individuals to create an event that can help inspire students to find their passions in life." <br></i>
+									Godwin Choi, Programmes director, Faculty of Science (Life Science, Year 4)<br><br>
+								</p>
+							</div>
+							<div class="col-md-4 col-xs-4">
+								<p style="font-size: 80%;">
+									<i>"BioBiz 2017 is an opportunity.  It's a learning opportunity for students to better understand the biomedical scene in Singapore.  It's also a great platform for us to meet the industry professionals as well as like minded individuals and interact with them to know more about the future prospects as well as share the passion of being in this industry." <br></i>
+									Hariharaputran Smrithi, Programmes Vice Director, School of Chemical and Biomedical Engineering (Bioengineering, Year 3)<br><br>
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4 col-xs-4">
+								<p style="font-size: 80%;">
+									<i>"An opportunity to make new friends from different faculties and schools, and a platform for me to gain new experience and skills with my new-made friends." <br></i> Vivien Tan, Publicity Director, Faculty of Science (Life Sciences, Year 2)<br><br>
+								</p>
+							</div>
+							<div class="col-md-4 col-xs-4">
+								<p style="font-size: 80%;">
+									<i>"BioBiz is a conference that allows participants who have the interest in the biomedical field, to plan for their futures ahead. It is where you get to understand the need of the industry nowadays, as well as meeting new friends who shares the same passion as you!" <br></i>
+									Ruby Lin Yu Tong, Publicity Vice Director, Faculty of Science (Life Sciences, Graduate)
+									)<br><br>
+								</p>
+							</div>
+
+						</div>
+
 					</div>
+
 				</div>
 			</div>
 		</div>
@@ -309,7 +417,7 @@
 		<h1> EVENT DETAILS </h1>
 		<hr>
 		<div class="row">
-			<h2> 1 APRIL 2017  |   SATURDAY   |   9AM - 6PM  |  SUNTEC CITY CONVENTION CENTRE </h2>
+			<h2> 1 APRIL 2017, SATURDAY  <br> 9AM - 6PM <br> SUNTEC CITY CONVENTION CENTRE </h2>
 		</div>
 
 		<br>
@@ -379,28 +487,28 @@
 		<h2> PANEL DISCUSSION TOPICS </h2>
 		<br>
 
-		<div class="panel-group" id="accordion">
-			<div class="panel panel-default" style="border:0; box-shadow:none; background-color: none;">
+		<div class="panel-group" id="accordion1">
+			<div class="panel panel-default" style="border:0; box-shadow:none;">
 
 				<div class="row">
 					<div class="col-md-4 col-xs-4">
 						<img src="img/logo.png" alt="testround">
-						<a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion" href="#panel1">
-							PANEL A
+						<a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion1" href="#panel1" role="button">
+							PANEL <br> A
 						</a>
 					</div>
 
 					<div class="col-md-4 col-xs-4">
 						<img src="img/logo.png" alt="testround">
-						<a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion" href="#panel2">
-							PANEL B
+						<a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion1" href="#panel2" role="button">
+							PANEL <br>B
 						</a>
 					</div>
 
 					<div class="col-md-4 col-xs-4">
 						<img src="img/logo.png" alt="testround">
-						<a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion" href="#panel3">
-							PANEL C
+						<a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion1" href="#panel3" role="button">
+							PANEL <br>C
 						</a>
 					</div>
 				</div>
@@ -481,23 +589,23 @@
 
 		<h2> OTHER DETAILS </h2>
 		<br>
-		<div class="panel-group" id="accordion">
+		<div class="panel-group" id="accordion2">
 			<div class="panel panel-default" style="border:0; box-shadow:none; background-color: none;">
 				<div class="row">
 					<div class="col-md-4 col-xs-4">
-						<a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion" href="#Other1">
+						<a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion2" href="#Other1" role="button">
 							PRE<br>CONFERENCE
 						</a>
 					</div>
 
 					<div class="col-md-4 col-xs-4">
-						<a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion" href="#Other2">
+						<a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion2" href="#Other2" role="button">
 							ACTUAL<br>CONFERENCE
 						</a>
 					</div>
 
 					<div class="col-md-4 col-xs-4">
-						<a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion" href="#Other3">
+						<a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion2" href="#Other3" role="button">
 							POST<br>CONFERENCE
 						</a>
 					</div>
@@ -588,10 +696,11 @@
 			Participating as a sponsor at BioBiz brings you right to this bridging platform of talented candidates
 			and skilled industry professionals for you to engage, explore your interests and to embark onto a
 			rewarding journey with energetic talents and lasting collaborations.
-			<br><br>
+			<br>
 		</p>
 		<h3 style="text-align: center;"> Contact us
-			<a href="mailto:biobizemail@biobiz.sg"><b>here</b></a>
+			<a href="mailto:megan.tan@biobiz.sg"><i class="fa fa-envelope-o"></i></a>
+
 			to become one of our sponsors today!  </h3>
 
 		<h3 style="text-align: center;"> <b> Organised by </b></h3>
@@ -600,20 +709,21 @@
 			<div class="col-md-4 col-xs-4"><img src="img/partners/nusbe.jpg"></div>
 
 		</div>
-		<h3 style="text-align: center;"> <b>Our Partners</b> </h3>
-		<div class="row" id="partners">
-			<div class="col-md-3 col-xs-3"><img src="img/partners/ntu.png"></div>
-			<div class="col-md-3 col-xs-3"> <img src="img/partners/nyp.png"></div>
-			<div class="col-md-3 col-xs-3"><img src="img/partners/np.png"></div>
-			<div class="col-md-3 col-xs-3"><img src="img/partners/ite.jpg"></div>
-		</div>
-		<div class="row" id="partners">
-			<div class="col-md-3 col-xs-3"><img src="img/partners/rp.png"></div>
-			<div class="col-md-3 col-xs-3"> <img src="img/partners/tp.jpg"></div>
-			<div class="col-md-3 col-xs-3"><img src="img/partners/sp.png"></div>
-			<div class="col-md-3 col-xs-3"><img src="img/partners/nuspharmacy.png"></div>
-		</div>
-
+		<!--
+                <h3 style="text-align: center;"> <b>Our Partners</b> </h3>
+                <div class="row" id="partners">
+                    <div class="col-md-3 col-xs-3"><img src="img/partners/ntu.png"></div>
+                    <div class="col-md-3 col-xs-3"> <img src="img/partners/nyp.png"></div>
+                    <div class="col-md-3 col-xs-3"><img src="img/partners/np.png"></div>
+                    <div class="col-md-3 col-xs-3"><img src="img/partners/ite.jpg"></div>
+                </div>
+                <div class="row" id="partners">
+                    <div class="col-md-3 col-xs-3"><img src="img/partners/rp.png"></div>
+                    <div class="col-md-3 col-xs-3"> <img src="img/partners/tp.jpg"></div>
+                    <div class="col-md-3 col-xs-3"><img src="img/partners/sp.png"></div>
+                    <div class="col-md-3 col-xs-3"><img src="img/partners/nuspharmacy.png"></div>
+                </div>
+        -->
 
 
 	</div>
@@ -632,19 +742,20 @@
 <div id="Socialfooter">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-4 col-sm-4">
+			<div class="col-md-5 col-xs-5">
+			</div>
+			<div class="col-md-1 col-xs-1">
 				<a href="https://www.facebook.com/BioBizConference/"><i class="fa fa-facebook-square"></i> </a>
 			</div>
+			<div class="col-md-1 col-xs-1">
+				<a href="https://www.instagram.com/biobiz.sg/"><i class="fa fa-instagram"></i> </a>
+			</div>
+			<div class="col-md-5 col-xs-5">
+			</div>
+
 		</div>
-		<!--
-        <li>
-            <a href="https://www.facebook.com/BioBizConference/"><i class="fa fa-youtube"></i> </a>
-        </li>
-        <li>
-            <a href="https://www.facebook.com/BioBizConference//"><i class="fa fa-envelope-square"></i> </a>
-        </li>
-        -->
-		<p style="text-align: center;"> Biobiz 2017</p>
+
+
 	</div>
 </div>
 

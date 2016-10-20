@@ -6,7 +6,7 @@ $(document).ready(function () {
         e.preventDefault();
         $(document).off("scroll");
 
-        $('a').each(function () {
+        $('.nav a').each(function () {
             $(this).removeClass('active');
         })
         $(this).addClass('active');
@@ -15,7 +15,7 @@ $(document).ready(function () {
             menu = target;
         $target = $(target);
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
+            'scrollTop': $target.offset().top-50 //Click to navigate
         }, 500, 'swing', function () {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
@@ -24,11 +24,11 @@ $(document).ready(function () {
 });
 
 function onScroll(event){
-    var scrollPos = $(document).scrollTop() + 100;
+    var scrollPos = $(document).scrollTop();
     $('#bs-example-navbar-collapse-1 a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top  + refElement.height() > scrollPos) {
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
             $('#bs-example-navbar-collapse-1 ul li a').removeClass("active");
             currLink.addClass("active");
         }
