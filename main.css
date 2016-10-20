@@ -406,6 +406,7 @@ td:hover {
 }
 
 
+
 /* Buttons  - Need font to auto shrink to fit inside the button.. */
 .btn-primary {
     color: #000000;
@@ -415,7 +416,6 @@ td:hover {
 	width: 100%;
 	height:100%;
 	padding: 6px 2px;
-	margin: auto;
 }
 
 .btn-primary:hover {
@@ -435,6 +435,11 @@ td:hover {
 	color: #ffffff;
 	background: #02B0A3;
 	border: 2px solid #02B0A3;
+}
+
+/* For text to fit in button */
+.col-xs-4{
+	padding: 0px 1%;
 }
 
 /* Dropdown panels */
