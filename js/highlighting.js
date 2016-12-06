@@ -15,7 +15,7 @@ $(document).ready(function () {
             menu = target;
         $target = $(target);
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top-50 //Click to navigate
+            'scrollTop': $target.offset().top-45 //Click to navigate
         }, 500, 'swing', function () {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
@@ -28,7 +28,7 @@ function onScroll(event){
     $('#bs-example-navbar-collapse-1 a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        if (refElement.position().top <= scrollPos +80 && refElement.position().top + refElement.height() > scrollPos) {
             $('#bs-example-navbar-collapse-1 ul li a').removeClass("active");
             currLink.addClass("active");
         }

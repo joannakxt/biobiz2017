@@ -1,11 +1,18 @@
-.navbar-default .container-fluid {
-	/* Adds shadow to the bottom of the bar */
-	-webkit-box-shadow: 0px 0px 8px 0px #000000;
-	-moz-box-shadow: 0px 0px 8px 0px #000000;
-	box-shadow: 0px 0px 8px 0px #000000;
-	/* Adds the transparent background */
+* {
+	box-sizing: border-box;
+}
+
+.navbar-default  {
 	padding: 3px;
 	background-color: black;
+	border: none;
+	min-height: 0px;
+	margin: 0px;
+}
+
+.navbar {
+	min-height: 0px;
+	margin: 0px;
 }
 
 .navbar-default .navbar-header .navbar-brand {
@@ -13,7 +20,11 @@
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 0px;
-
+	margin-left: 0px;
+	height: auto;
+	min-height: 0px;
+	margin-bottom: 0px;
+	border: none;
 }
 
 .navbar-default .navbar-nav {
@@ -21,14 +32,15 @@
 }
 
 .navbar-default .navbar-nav li  {
-	padding-left: 5px;
-	padding-right: 5px;
-	font-size: 20px;
+	padding-left: 2px;
+	padding-right: 2px;
+	font-size: 16px;
 	font-weight: bold;
 	font-family: 'Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 .navbar-default .navbar-nav li a {
 	color: #ffffff;
+	padding:10px;
 }
 
 .navbar-default .navbar-nav li a:active,
@@ -53,12 +65,18 @@
 }
 
 .navbar-brand img {
-	width: 48px;
-	height: 48px;
+	width: 40px;
+	height: 40px;
 	background: #fff;
 	border-radius: 50%;
 	text-align: center;
 	vertical-align: middle;
+}
+
+.navbar-toggle {
+	margin: 4px 10px;
+	padding: 7px 8px;
+	position: relative;
 }
 
 /* Remove the extra white spacing on right side */
@@ -117,8 +135,15 @@ body h3 {
 	padding: 1%;
 }
 
+/* Medium devices only */
+@media (min-width: 768px) and (max-width: 1199px) {
+	body h3 {
+		font-size: 130%;
+	}
+}
+
 body h4 {
-    font-size: 120%;
+    font-size: 110%;
     font-family: 'Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -139,8 +164,8 @@ hr {
 }
 
 #Home{
-	padding: 30px;
-	padding-top: 90px;
+	padding: 1px;
+	padding-top: 30px;
 }
 
 #Home .container #carouselBox {
@@ -178,6 +203,7 @@ hr {
     background: #02B0A3;
 	border: 2px solid #ffffff;
 	font-weight: bold;
+
 }
 
 #AboutUs .btn-primary:hover {
@@ -237,7 +263,7 @@ hr {
 
 #EventDetails {
 	padding-top: 15px;
-	padding-bottom: 3px;
+	padding-bottom: 15px;
 	text-align: center;
 }
 
@@ -263,6 +289,14 @@ table td {
 	font-family: 'Lato','Helvetica Neue',Helvetica,Arial,sans-serif;
 	font-size: 100%;
 }
+
+/* For mobile */
+@media (min-width: 320px) and (max-width: 740px) {
+	table td {
+		font-size: 80%;
+	}
+}
+
 td:hover {
 	background-color: #02B0A3;
 }
@@ -276,7 +310,7 @@ td:hover {
 
 #Registration{
 	padding-top: 15px;
-	padding-bottom: 30px;
+	padding-bottom: 15px;
 	background-color: #02B0A3;
 	text-align: center;
 }
@@ -302,7 +336,7 @@ td:hover {
 }
 #Sponsors{
 	padding-top: 15px;
-	padding-bottom: 30px;
+	padding-bottom: 15px;
 }
 
 #Sponsors hr {
@@ -336,7 +370,7 @@ td:hover {
 
 #FAQ{
 	padding-top: 15px;
-	padding-bottom: 30px;
+	padding-bottom: 15px;
 	background-color: #02B0A3;
 	text-align: center;
 }
@@ -363,8 +397,9 @@ td:hover {
 
 #Socialfooter {
 	background-color: #fff;
-	padding: 50px;
 	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 #Socialfooter .container {
@@ -377,14 +412,16 @@ td:hover {
 	transition: all 0.2s ease-in-out;
     border-radius: 10px;
     background-color: #fff;
-    width: 50%;
+	margin: 0 auto;
+	float: none;
+	padding-left: 3px;
+	padding-right: 3px;
 }
 
 #Socialfooter .row a i:hover {
 	opacity: 0.3;
     background-color: #02B0A3;
     border-radius: 10px;
-    width: 50%;
 }
 
 #Socialfooter .fa-facebook-square {
@@ -405,8 +442,6 @@ td:hover {
 	margin: auto;
 }
 
-
-
 /* Buttons  - Need font to auto shrink to fit inside the button.. */
 .btn-primary {
     color: #000000;
@@ -416,6 +451,8 @@ td:hover {
 	width: 100%;
 	height:100%;
 	padding: 6px 2px;
+	box-sizing: border-box;
+	font-size: 100%;
 }
 
 .btn-primary:hover {
@@ -435,6 +472,13 @@ td:hover {
 	color: #ffffff;
 	background: #02B0A3;
 	border: 2px solid #02B0A3;
+}
+
+/* For mobile */
+@media (min-width: 320px) and (max-width: 740px) {
+	.btn-primary {
+		font-size: 80%;
+	}
 }
 
 /* For text to fit in button */
